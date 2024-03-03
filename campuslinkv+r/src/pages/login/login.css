@@ -8,7 +8,7 @@
     padding: 0;
 }
 
-.contenedor-registro {
+.contenedor-inicio_sesion {
     background-color: rgb(255, 255, 255);
     width: 100%;
     height: 90%;
@@ -16,9 +16,10 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-family: "Lato", sans-serif;
 }
 
-.contenedor-login {
+.contenedor-card-inicio_sesion {
     background-color:#ba53f29d;;
     text-align: center;
     border-radius: 5%;
@@ -31,7 +32,7 @@
 }
 
 
-.contenedor-titulo{
+.contenedor-logo{
     width: 50%;
     text-align: center;
     justify-content: center;
@@ -43,21 +44,21 @@
 
                                                /*-------------LOGIN---------------------------- */
 
-.contenedor-login h1{
+.contenedor-card-inicio_sesion h1{
     color: black;
     font-family: "Lato", sans-serif;
     font-weight: bold;
     font-style: normal;
-    font-size: 25px;
+    font-size: 30px;
     margin-top: 5%;
 }
 
-.login{
+.inicio_sesion{
     margin-left: 10%;
     width: 40%;
  }
 
-.contenedor-login p{
+.contenedor-card-inicio_sesion p{
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -65,7 +66,7 @@
     padding-top: 5%;
 }
 
-.registro-boton{
+.boton-inicio_sesion{
     background-color: #000000;
     color: #fff;
     width: 45%;
@@ -74,9 +75,10 @@
     font-family: "Montserrat", sans-serif;
     border-radius: 10px;
     border-color: #fff;
+    
 }
 
-.registro-boton-google{
+.boton-google-inicio_sesion{
     background-color: #ffffff;
     color: #000000;
     width: 45%;
@@ -87,7 +89,7 @@
     border-color: #fff;
 }
 
-.registro-boton-google .icono-google {
+.boton-google-inicio_sesion .icono-google {
     margin-right: 8px; /* Espacio entre el icono y el texto */
   }
 
@@ -99,7 +101,7 @@
     
 }
 
-.redireccion-login a{
+.redireccion-inicio_sesion a{
     color: #f8fafc;
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
@@ -123,9 +125,8 @@
 
 .input {
     width: 200%;
-    height: 30px;
     line-height: 30px;
-   padding-left: 10px;
+    padding-left: 10px;
     border: 2px solid transparent;
     border-radius: 25px;
     background-color: #f8fafc;
@@ -157,21 +158,21 @@
 
                                              /*-------------TITULO IZQUIERDO---------------------------- */
 
-.contenedor-titulo h1{
+.contenedor-logo h1{
   margin-bottom: 5%; 
   font-family: "Lato", sans-serif;
-  font-size: 70px;
+  font-size: 40px;
   font-weight: 900;
 }
 
-.contenedor-titulo p{
+.contenedor-logo p{
     margin-bottom: 2%;  
     font-family: "Lato", sans-serif;
   }
 
-.nombre-input{
+.input-inicio_sesion{
     display: flex;
-    margin-top: 3%;  
+    margin-top: 8%;  
     flex-direction: column;
     align-items: center;
 }

@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* Reset de estilos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor del título */
+.contenedor-titulo {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    margin-left: 0; /* ¿Necesario? */
+}
+
+/* Título */
+.contenedor-titulo h1 {
+    margin-top: 35px;
+    margin-left: 10px;
+    margin-bottom: 5%;
+    font-size: 25px;
+    font-weight: 900;
+    box-shadow: 0 9px 9px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+/* Contenedor del header */
+.contenedor-header {
+    display: flex;
+    background-color: #ba53f29d;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: fixed;
+}
+
+/* Texto morado */
+.morado {
+    color: #ba53f2;
+}
+
+.blanco {
+    color: #ffffff;
+}
+
+/* Contenedor de búsqueda */
+.contenedor-busqueda {
+    width: 46%;
+    height: 60%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Input de búsqueda */
+.input-home {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    width: 70%;
+    height: 30px;
+}
+
+/* Botón de búsqueda */
+button{
+    padding: 6px 20px;
+    font-size: 16px;
+    background-color: #ba53f2;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Estilos de hover para el botón */
+button:hover{
+    background-color: #9e29dde3;
+}
+
+/* Estilos cuando el input de búsqueda está enfocado */
+input[type="text"]:focus {
+    outline: none;
+    border-color: #ba53f2;
+}
+
+.botones-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+    
+}
+
+.icono-perfil {
+    width: 25px;
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+.icono-perfil:hover {
+    transform: scale(2.02); /* Aumentar tamaño al hacer hover */
+}
+
+.icono-ajustes {
+    width: 25px;
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+.icono-ajustes:hover {
+    transform: scale(1.5); /* Aumentar tamaño al hacer hover */
+}
+
+.ajuste-button {
+    display: flex;
+    border: #fff;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    border: 4px solid rgb(255, 255, 255);
+    justify-content: center;
+    margin: 10px;
+    border-radius: 100%;
+    justify-content: space-around;
+}
+
+.perfil-button {
+    display: flex;
+    border: #fff;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    border: 4px solid rgb(255, 255, 255);
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.formulario-perfil{
+    display: flex;
+    width: 80%; 
+    height: 80%;
+    margin-top: 6.5%;
+    background-color:#ba53f29d;;
+    text-align: center;
+    align-items: center;
+    border-radius: 15px;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+   padding: 1%;
+   transition: 0.3s ease;
+}
+
+.formulario-perfil:hover{
+  transform: scale(1.01);
+}
+
+.contenedor-completar_perfil{
+    display: flex;
+    justify-content: center;  
+    width: 100%;
+    height: 100vh;
+    font-family: "Lato", sans-serif; 
+    font-weight: bold;
+}
+
+.formulario-perfil h1{
+    font-size: 28px;
+    margin-top: -20px;
+    padding-bottom: 20px;
+}
+
+.input-carrera{
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 90%;
+margin-top: 10px;
+}
+  
+  .input::placeholder {
+    color: #5e4b5e;
+    font-family: "Lato", sans-serif;     
+  }
+  
+  .input:focus, input:hover {
+    outline: none;
+    border-color: #b394b8;
+    background-color: #fff;
+    box-shadow: 0 0 0 5px rgba(224, 129, 248, 0.3);
+  }
+
+  input[type="search"]::placeholder {
+    color: #000000; /* Color del texto del marcador de posición */
+     /* Color de fondo del marcador de posición */
+    padding: 10px; /* Espaciado dentro del marcador de posición */
+}
+
+  .contenedor-formulario{
+    width: 90%;
+    height: 90%;
+    display: flex;
+  }
+
+  .card-formulario-izquuerdo{
+    width: 48%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-formulario-derecho{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    margin-left: 40px;
+    flex-direction: column;
+  }
+
+  .carrera-form{
+    display: flex; 
+    flex-direction: column;  
+    width: 100%;
+    height: 15%;
+}
+
+.intereses-form{
+    display: flex; 
+    flex-direction: column;  
+    width: 100%;
+    height: 25%;
+}
+
+.intereses-form input{
+    width: 100%;
+    height: 60%;
+    line-height: 30px;
+    padding-left: 10px;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    background-color: #f8fafc;
+    color: #0d0c22;
+    transition: .5s ease;
+}
+
+label{
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+
+.input {
+    width: 100%;
+    height: 40%;
+    line-height: 30px;
+    padding-left: 5px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: #f8fafc;
+    color: #0d0c22;
+    transition: .5s ease;
+    margin-top: 5px;
+  }
+  
+  .input::placeholder {
+    color: #5e4b5e;
+    font-family: "Montserrat", sans-serif; 
+  }
+  
+  .input:focus, input:hover {
+    outline: none;
+    border-color: #b394b8;
+    background-color: #fff;
+    box-shadow: 0 0 0 5px rgba(224, 129, 248, 0.3);
+  }
+
+  .redes_sociales-form{
+    width: 100%;
+    height: 25%;
+  }
+
+.redes_sociales-form p{
+  display: flex;
+  align-items: flex-start;
+}
+
+  .redes_sociales-form input{
+height: 65%;
+width: 40%;
+display: flex;
+flex-direction: column;
+margin-left: 10px;
+  }
+
+  .instagram-form{
+    width: 100% ;
+    height: 33.3%;
+    display: flex;
+    align-items: center;
+  }
+
+  .facebook-form{
+    width: 100% ;
+    height: 33.3%;
+    display: flex;
+    align-items: center;
+  }
+
+  .twiter-form{
+    width: 100% ;
+    height: 33.3%;
+    display: flex;
+    align-items: center;
+  }
+
+  .foto_perfil-form{
+    
+    width: 100%;
+    height: 13%;
+    display: flex;
+  }
+
+  .foto_perfil-form img{
+    display: flex;
+    width: 10%;
+    height: 80%;
+    border: solid 3px black;
+   margin-top: 3px;
+   border-radius: 5px;
+   background-color: #9f9e9f;
+   
+  }
+
+  .foto_perfil-form-input{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+
+  .ubicacion-form{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ubicacion-form p{
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .datos_calle-form{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    margin-top: 5px;
+  }
+
+  .calle-form{
+    width: 50%;
+    height: 100%;
+  }
+
+.N_interno-form{
+width: 30%;
+margin-left: 20px;
+  }
+  
+  .datos_colonia-form{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    margin-top: 5px;
+  }
+
+  .contenedor-boton{
+    display: flex;
+    justify-content: center;
+  }
+
+  .boton-blanco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    width: 30%;
+    height: 100%;
+    padding: 6px 20px;
+    font-size: 13px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .boton-blanco:hover {
+    transform: scale(1.02); /* Aumentar tamaño al hacer hover */
+}
+  
+
+ 
